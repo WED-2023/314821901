@@ -16,7 +16,7 @@
 		overflow: hidden;
 		justify-content: center;
 		display: flex;
-		font-size: 1.5rem;
+		font-size: 20px;
 		align-items: center; /* Ensure the menu items are vertically centered */
 		font-family: Arial, sans-serif;
 		z-index: 2; /* Make sure the menu stays on top of other elements */
@@ -55,7 +55,7 @@
 
 	.section h2 {
 		text-align: center;
-		font-size: 30px;
+		font-size: 25px;
 		color: #333;
 		margin-bottom: 10px;
 		position: absolute; /* Absolute positioning within the parent */
@@ -81,7 +81,7 @@
 		font-size: 20px;
 	}
 	h3{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	p:lang(en) {
 		direction: ltr;  /* כיוון טקסט משמאל לימין */
