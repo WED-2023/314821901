@@ -28,7 +28,7 @@
 		object-fit: cover;   /* Ensures the image fits the square container */
 		border-radius: 80px; /* Optional: rounded corners */
 		position: fixed;
-		top: 11%;            /* Centers the logo vertically relative to the menu */
+		top: 15%;            /* Centers the logo vertically relative to the menu */
 		left: 80px;          /* Aligns the logo to the left corner */
 		transform: translateY(-50%); /* Adjust to exactly center the logo */
 		z-index: 9999;          /* Ensure the logo appears above the menu */
