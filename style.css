@@ -78,7 +78,7 @@
 		direction: rtl;
 		text-align: right;  /* יישור טקסט לימין */
 		font-family: Arial, sans-serif;
-		font-size: 25px;
+		font-size: 20px;
 	}
 	h3{
 		font-size: 30px;
@@ -102,7 +102,7 @@
 	}
 	#photos {
 		display: block;                 /* Use flexbox to align the content */
-		text-align: center;
+		text-align:center;
 		gap: 20px;                     /* Set space between the images */
 	}
 	#qrcoder {
