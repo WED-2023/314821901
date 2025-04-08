@@ -58,7 +58,7 @@ My Photos
 <h2>
 My Playlist
 </h2>
-<hr> <!-- Horizontal line -->
+<hr> 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4IeP6CrJbQMqdWqzuxwemt?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </section>
 
@@ -192,8 +192,8 @@ Q&A
   <h2>
   Contact Me
   </h2>
-<hr> <!-- Horizontal line -->
-<form id="contact-form" action="your-backend-endpoint" method="POST">
+<hr> 
+<form id="contact-form" action="mailto:asafbaruch81@gmail.com" method="POST" enctype="text/plain">
   <div class="form-group">
     <label for="name"></label>
     <input type="text" id="name" name="name" required placeholder="Enter your name" />
@@ -209,6 +209,11 @@ Q&A
     <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
   </div>
 
+  <div id="smilies" style="margin-bottom: 5px;">
+    <span onclick="addEmoji('😊')">😊</span>
+    <span onclick="addEmoji('👍')">👍</span>
+    <span onclick="addEmoji('❤️')">❤️</span>
+  </div>
   <button type="submit">Submit</button>
 </form>
 </section>
@@ -228,5 +233,16 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+   <script>
+    function addEmoji(emoji) {
+      const messageBox = document.getElementById("message");
+      const start = messageBox.selectionStart;
+      const end = messageBox.selectionEnd;
+      const text = messageBox.value;
+      messageBox.value = text.substring(0, start) + emoji + text.substring(end);
+      messageBox.focus();
+      messageBox.selectionStart = messageBox.selectionEnd = start + emoji.length;
+    }
+  </script>
 </body>
 </html>

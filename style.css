@@ -17,22 +17,22 @@
 		justify-content: center;
 		display: flex;
 		font-size: 20px;
-		align-items: center; /* Ensure the menu items are vertically centered */
+		align-items: center; 
 		font-family: Arial, sans-serif;
-		z-index: 2; /* Make sure the menu stays on top of other elements */
+		z-index: 2; 
 	}
 
 	#logo img {
-		height: 180px;        /* Set height to define the size */
-		width: 180px;         /* Set width to make the logo square */
-		object-fit: cover;   /* Ensures the image fits the square container */
-		border-radius: 80px; /* Optional: rounded corners */
+		height: 180px;        
+		width: 180px;        
+		object-fit: cover;   
+		border-radius: 80px; 
 		position: fixed;
-		top: 15%;            /* Centers the logo vertically relative to the menu */
-		left: 80px;          /* Aligns the logo to the left corner */
-		transform: translateY(-50%); /* Adjust to exactly center the logo */
-		z-index: 9999;          /* Ensure the logo appears above the menu */
-		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); /* Adding shadow background */
+		top: 15%;            
+		left: 80px;          
+		transform: translateY(-50%); 
+		z-index: 9999;          
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); 
 
 	}
 
@@ -44,13 +44,13 @@
 		padding: 15px;
 		text-align: center;
 		display: block;
-		margin-left: 10px; /* Add some space between the menu items and the pipe */
+		margin-left: 10px;
 	}
 
 
 	#menu a:hover {
-		transform: scale(1.1); /* Scale the item by 10% */
-		transition: transform 0.3s ease; /* Smooth transition effect */
+		transform: scale(1.1); 
+		transition: transform 0.3s ease; 
 	}
 
 	.section h2 {
@@ -58,25 +58,25 @@
 		font-size: 25px;
 		color: #333;
 		margin-bottom: 10px;
-		position: absolute; /* Absolute positioning within the parent */
-		top: 0; /* Ensure it is positioned at the top */
-		width: 100%; /* Make sure it takes the full width of the parent */
+		position: absolute; 
+		top: 0; 
+		width: 100%;
 		left: 0;
-		padding-top: 20px; /* Optional: adds space above the header */
+		padding-top: 20px; 
 		font-family: Arial, Helvetica, sans-serif;
 	}
 	
 	.section {
-		background-color: #fff; /* White background for each section */
+		background-color: #fff; 
 		padding: 100px;
 		margin: 10px auto;
 		width: 80%;
-		border-radius: 10px; /* Rounded corners */
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the paper effect */
+		border-radius: 10px; 
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 		box-sizing: border-box;
-		position: relative; /* Ensure the absolute positioning of h2 is relative to this container */
+		position: relative; 
 		direction: rtl;
-		text-align: right;  /* יישור טקסט לימין */
+		text-align: right; 
 		font-family: Arial, sans-serif;
 		font-size: 20px;
 	}
@@ -84,43 +84,43 @@
 		font-size: 25px;
 	}
 	p:lang(en) {
-		direction: ltr;  /* כיוון טקסט משמאל לימין */
-		text-align: left;  /* יישור טקסט לשמאל */
+		direction: ltr;  
+		text-align: left; 
 	}
 	#photos img {
-		height: 250px;         /* Set height to define the size */
-		width: 250px;          /* Set width to make the logo square */
-		object-fit: cover;     /* Ensures the image maintains its aspect ratio */
-		border-radius: 15px;   /* Rounded corners for a softer look */
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow to give depth */
-		transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */ 
+		height: 250px;        
+		width: 250px;          
+		object-fit: cover;     
+		border-radius: 15px;  
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+		transition: transform 0.3s ease, box-shadow 0.3s ease; 
 	}
 
 	#photos img:hover {
-		transform: scale(1.1); /* Slight zoom effect on hover */
-		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+		transform: scale(1.1); 
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
 	}
 	#photos {
-		display: block;                 /* Use flexbox to align the content */
+		display: block;                
 		text-align:center;
-		gap: 20px;                     /* Set space between the images */
+		gap: 20px;                    
 	}
 	#qrcoder {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		text-align: center; /* Center the text */
+		text-align: center; 
 	  }
 	
 	  #qrcoder img {
-		margin-top: 20px; /* Optional: add space between the text and the image */
-		height: 250px;         /* Set height to define the size */
+		margin-top: 20px; 
+		height: 250px;         
 	  }
 
 	  .section hr {
 		border-top: 2px solid var(--primary-color); 
-		margin: 10px; /* Add spacing above and below the line */
-		align-self:stretch; /* ensures it fills the width */
+		margin: 10px; 
+		align-self:stretch; 
 
 	  }
 
@@ -137,12 +137,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-		max-width: 300px; /* You can adjust the width as needed */
+		max-width: 300px; 
 		margin: 0 auto;
 		text-align: center;
-		padding: 20px;  /* Add padding to create space inside the form */
-		border: 2px solid var(--primary-color); /* Add a border around the form */
-		border-radius: 10px; /* Optional: to round the corners */
+		padding: 20px;  
+		border: 2px solid var(--primary-color); 
+		border-radius: 10px; 
 	  }
 	  
 	  /* Input and Textarea Styling */
@@ -153,9 +153,9 @@
 		font-size: 1rem;
 		border: 1px solid #ccc;
 		border-radius: 5px;
-		width: 100%;  /* Make the input and button take the full width of the container */
-		box-sizing: border-box; /* Ensure padding doesn't affect the width */
-		font-family: inherit; /* Ensure the same font-family for input, textarea, and button */
+		width: 100%;  
+		box-sizing: border-box;
+		font-family: inherit; 
 
 	  }
 	  
